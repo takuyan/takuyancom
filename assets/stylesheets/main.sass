@@ -10,12 +10,15 @@ $bodyBackground: $base3
 $iconSpritePath: "../images/glyphicons-halflings.png"
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png"
 
+$infoBackground: $base01
+$infoText: $cyan
+$baseFontFamily: 'Inconsolata', sans-serif, Ryumin Medium KL
+
 @import 'lib/bootstrap'
 @import 'lib/responsive'
 
 body
   margin-top: 60px
-  font-family: 'Inconsolata', sans-serif
 
 @media (max-width: 979px)
   body
@@ -30,6 +33,81 @@ body
     background: $yellow
     text-shadow: none
 
-.page-header h1
-  color: $yellow
-  font-size: 400%
+.page-header
+  margin: 0 0 30px
+  h1#title
+    font-size: 600%
+    color: $cyan
+    padding: 10px 0
+@media (max-width: 979px)
+  .page-header
+    h1#title
+      font-size: 360%
+      small
+        margin: 20px 0 0
+        line-height: 1.4em
+
+.alert-block
+  p
+    line-height: 2em
+    margin: 0 0 5px
+    text-shadow: none
+    a
+      color: $green
+
+blockquote
+  font-size: 200%
+
+.page-header
+  h2
+    font-size: 300%
+    color: $base01
+p
+  line-height: 1.6em
+  font:
+    size: 120%
+  color: $base01
+
+ul
+  margin-top: 20px
+  margin-bottom: 20px
+  &.list
+    li
+      line-height: 3em
+      a
+        font-size: 20px
+        color: #d33682
+        &:hover
+          text-decoration: none
+          color: darken(#d33682, 30%)
+          cursor: pointer
+
+#about, #projects, #contact
+  margin: 0 0 30px
+  h3
+    margin: 10px 0
+    color: $base1
+    font:
+      size: 150%
+      weight: normal
+  ul
+    margin: 0
+    padding: 0 0 0 20px
+    li
+      line-height: 2em
+      color: $magenta
+      text-shadow: none
+      font:
+        size: 140%
+  @media (max-width: 979px)
+    p
+      margin-top: 2em
+#about ul li
+  color: $green
+  font:
+    size: 120%
+
+#projects ul li
+  color: $magenta
+
+
