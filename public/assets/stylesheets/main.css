@@ -505,11 +505,11 @@ a.text-error:focus {
   color: #953b39; }
 
 .text-info {
-  color: #2aa198; }
+  color: #93a1a1; }
 
 a.text-info:hover,
 a.text-info:focus {
-  color: #1f7972; }
+  color: #788989; }
 
 .text-success {
   color: #468847; }
@@ -1202,32 +1202,32 @@ input[type="checkbox"][readonly] {
 .control-group.info .control-label,
 .control-group.info .help-block,
 .control-group.info .help-inline {
-  color: #2aa198; }
+  color: #93a1a1; }
 .control-group.info .checkbox,
 .control-group.info .radio,
 .control-group.info input,
 .control-group.info select,
 .control-group.info textarea {
-  color: #2aa198; }
+  color: #93a1a1; }
 .control-group.info input,
 .control-group.info select,
 .control-group.info textarea {
-  border-color: #2aa198;
+  border-color: #93a1a1;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .control-group.info input:focus,
   .control-group.info select:focus,
   .control-group.info textarea:focus {
-    border-color: #1f7972;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #5cd5cb;
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #5cd5cb;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #5cd5cb; }
+    border-color: #788989;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #cad0d0;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #cad0d0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #cad0d0; }
 .control-group.info .input-prepend .add-on,
 .control-group.info .input-append .add-on {
-  color: #2aa198;
-  background-color: #586e75;
-  border-color: #2aa198; }
+  color: #93a1a1;
+  background-color: #268bd2;
+  border-color: #93a1a1; }
 
 input:focus:invalid,
 textarea:focus:invalid,
@@ -1728,7 +1728,7 @@ table th[class*="span"],
 .table tbody tr.warning > td {
   background-color: #fcf8e3; }
 .table tbody tr.info > td {
-  background-color: #586e75; }
+  background-color: #268bd2; }
 
 .table-hover tbody tr.success:hover > td {
   background-color: #d0e9c6; }
@@ -1737,7 +1737,7 @@ table th[class*="span"],
 .table-hover tbody tr.warning:hover > td {
   background-color: #faf2cc; }
 .table-hover tbody tr.info:hover > td {
-  background-color: #4d6066; }
+  background-color: #227dbc; }
 
 [class^="icon-"],
 [class*=" icon-"] {
@@ -3031,12 +3031,12 @@ input[type="submit"].btn {
   color: #b94a48; }
 
 .alert-info {
-  background-color: #586e75;
-  border-color: #495f61;
-  color: #2aa198; }
+  background-color: #268bd2;
+  border-color: #2190b4;
+  color: #93a1a1; }
 
 .alert-info h4 {
-  color: #2aa198; }
+  color: #93a1a1; }
 
 .alert-block {
   padding-top: 14px;
@@ -4428,10 +4428,10 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   background-color: #356635; }
 
 .label-info {
-  background-color: #2aa198; }
+  background-color: #93a1a1; }
 
 .label-info[href] {
-  background-color: #1f7972; }
+  background-color: #788989; }
 
 .label-inverse {
   background-color: #333333; }
@@ -4458,10 +4458,10 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   background-color: #356635; }
 
 .badge-info {
-  background-color: #2aa198; }
+  background-color: #93a1a1; }
 
 .badge-info[href] {
-  background-color: #1f7972; }
+  background-color: #788989; }
 
 .badge-inverse {
   background-color: #333333; }
@@ -5907,3 +5907,29 @@ ul {
 
 #projects ul li {
   color: #d33682; }
+
+.not_found {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 0 50px;
+  font-size: 600%;
+  color: #2aa198; }
+  .not_found#nf1, .not_found#nf2, .not_found#nf3, .not_found#nf4 {
+    font-size: 600%; }
+  .not_found#nf1 {
+    margin-top: 30px;
+    font-size: 900%;
+    color: #2aa198; }
+  .not_found#nf2 {
+    color: #dc322f; }
+  .not_found#nf3 {
+    font-size: 900%;
+    color: #859900; }
+  .not_found#nf4 {
+    color: #cb4b16; }
+
+@media (max-width: 979px) {
+  .not_found {
+    font-size: 360%; }
+    .not_found#nf1, .not_found#nf2, .not_found#nf3, .not_found#nf4 {
+      font-size: 460%; } }

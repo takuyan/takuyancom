@@ -10,8 +10,8 @@ $bodyBackground: $base3
 $iconSpritePath: "../images/glyphicons-halflings.png"
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png"
 
-$infoBackground: $base01
-$infoText: $cyan
+$infoBackground: $blue
+$infoText: $base1
 $baseFontFamily: 'Inconsolata', sans-serif, 'Ryumin Medium KL', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
 
 @import 'lib/bootstrap'
@@ -110,4 +110,27 @@ ul
 #projects ul li
   color: $magenta
 
-
+.not_found
+  text-align: center
+  padding: 20px 0
+  margin: 0 0 50px
+  font-size: 600%
+  color: $cyan
+  &#nf1, &#nf2, &#nf3, &#nf4
+    font-size: 600%
+  &#nf1
+    margin-top: 30px
+    font-size: 900%
+    color: $cyan
+  &#nf2
+    color: $red
+  &#nf3
+    font-size: 900%
+    color: $green
+  &#nf4
+    color: $orange
+@media (max-width: 979px)
+  .not_found
+    font-size: 360%
+    &#nf1, &#nf2, &#nf3, &#nf4
+      font-size: 460%
