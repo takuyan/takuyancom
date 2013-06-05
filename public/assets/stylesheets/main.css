@@ -173,7 +173,7 @@ textarea {
     page-break-after: avoid; } }
 body {
   margin: 0;
-  font-family: "Inconsolata", sans-serif, "Ryumin Medium KL", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "Maru Folk Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -780,7 +780,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Inconsolata", sans-serif, "Ryumin Medium KL", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif; }
+  font-family: "Maru Folk Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif; }
 
 label {
   display: block;
@@ -5825,6 +5825,9 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     overflow: visible !important; } }
 body {
   margin-top: 60px; }
+
+.page-header h1, .page-header h2, .page-header h3, .page-header h4, .page-header h5, .page-header h6 {
+  font-family: "Inconsolata"; }
 
 @media (max-width: 979px) {
   body {

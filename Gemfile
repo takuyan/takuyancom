@@ -11,3 +11,4 @@ gem 'guard-sass'
 gem 'guard-coffeescript'
 
 gem 'aws-sdk'
+gem 'rake'
