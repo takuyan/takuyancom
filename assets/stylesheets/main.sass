@@ -1,0 +1,35 @@
+@import 'colors'
+
+$navbarBackground: $base0
+$navbarBackgroundHighlight: lighten($navbarBackground, 10%)
+$navbarBrandColor: $base3
+$navbarText: $base01
+$navbarLinkColor: $base01
+$bodyBackground: $base3
+
+$iconSpritePath: "../images/glyphicons-halflings.png"
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png"
+
+@import 'lib/bootstrap'
+@import 'lib/responsive'
+
+body
+  margin-top: 60px
+  font-family: 'Inconsolata', sans-serif
+
+@media (max-width: 979px)
+  body
+    margin-top: 0px
+
+.navbar .navbar-inner
+  .nav li > a
+    text-shadow: none
+    &:hover
+      color: $base3
+  .brand
+    background: $yellow
+    text-shadow: none
+
+.page-header h1
+  color: $yellow
+  font-size: 400%
