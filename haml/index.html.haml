@@ -93,9 +93,12 @@
                     コイン・マジック
                   %li
                     育児
+
           .span2
             %p
               %img{src: '/assets/images/image.jpg', alt: 'takuyan', class: 'img-polaroid'}
+            %p
+              Takuya Kato
 
       #projects
         .row
@@ -115,6 +118,9 @@
                   文字並べ - Display Strings
                   %span.label
                     Joke
+              %li
+                %a{href: "http://gsuggest.herokuapp.com/", target: :_blank}
+                  Google Suggest API もどき
           .span5
             .page-header
               %h2
@@ -136,20 +142,25 @@
         %p
           思うところがございましたら、contact[あっと]takuyan.com または、Twitterなどからご連絡ください。
 
+    #footer
+      .container
+        %ul.inline
+          %li
+            &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
 
-    %script{src: "/assets/javascripts/lib/bootstrap-affix.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-alert.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-button.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-carousel.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-affix.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-alert.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-button.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-carousel.js"}
     %script{src: "/assets/javascripts/lib/bootstrap-collapse.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-dropdown.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-modal.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-scrollspy.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-tab.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-tooltip.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-transition.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-typeahead.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-popover.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-dropdown.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-modal.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-scrollspy.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-tab.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-tooltip.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-transition.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-typeahead.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap-popover.js"}
     %script{src: "/assets/javascripts/main.js"}
     :javascript
       var _gaq = _gaq || [];

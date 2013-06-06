@@ -57,10 +57,21 @@
         Not
       %h2.not_found#nf4
         Found
-      %h3.not_found#nf4
-        %a{href: '/', class: 'btn btn-info'}
+      %p.next
+        %i.icon-chevron-down
+      %p.next
+        %i.icon-chevron-down
+      %p.next
+        %i.icon-chevron-down
+      %h3.not_found
+        %a{href: '/', class: 'btn btn-info btn-link'}
           %i.icon-home
           Back to Top
+    #footer
+      .container
+        %ul.inline
+          %li
+            &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-30952501-1']);

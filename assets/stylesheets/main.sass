@@ -46,9 +46,16 @@ body
 @media (max-width: 979px)
   .page-header
     h1#title
-      font-size: 360%
+      font-size: 340%
       small
         margin: 20px 0 0
+        line-height: 1.4em
+@media (max-width: 319px)
+  .page-header
+    h1#title
+      font-size: 240%
+      small
+        margin: 10px 0 0
         line-height: 1.4em
 
 .alert-block
@@ -138,3 +145,16 @@ ul
     font-size: 360%
     &#nf1, &#nf2, &#nf3, &#nf4
       font-size: 460%
+.next
+  text-align: center
+  margin: 20px 0
+
+#footer
+  background: $base2
+  ul
+    li
+      color: $base1
+
+::selection
+  background: $magenta
+  color: $base3
