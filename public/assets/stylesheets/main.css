@@ -3547,19 +3547,13 @@ body {
   padding: 10px 0;
   font-size: 600%;
   font-family: "Inconsolata"; }
-
 @media (max-width: 979px) {
-  h1#title {
-    font-size: 340%; }
-    h1#title small {
-      margin: 20px 0 0;
-      line-height: 1.4em; } }
+  .container h1#title {
+    font-size: 340%; } }
 @media (max-width: 319px) {
-  h1#title {
-    font-size: 240%; }
-    h1#title small {
-      margin: 10px 0 0;
-      line-height: 1.4em; } }
+  .container h1#title {
+    font-size: 240%; } }
+
 .alert-block p {
   line-height: 2em;
   margin: 0 0 5px;
