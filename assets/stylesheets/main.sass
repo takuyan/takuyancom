@@ -1,62 +1,57 @@
 @import 'colors'
 
-$navbarBackground: $base0
-$navbarBackgroundHighlight: lighten($navbarBackground, 10%)
-$navbarBrandColor: $base3
-$navbarText: $base01
-$navbarLinkColor: $base01
-$bodyBackground: $base3
+$navbar-bg: $base0
+$navbar-brand-color: $base3
+$navbar-link-color: $base01
+$body-bg: $base3
 
 $iconSpritePath: "../images/glyphicons-halflings.png"
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png"
 
 $infoBackground: $blue
 $infoText: $base1
-$baseFontFamily: 'Maru Folk Regular', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
 
-@import 'lib/bootstrap'
-@import 'lib/responsive'
+$font-family-sans-serif: 'Inconsolata', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
+
+@import 'bootstrap'
 
 body
-  margin-top: 60px
+  margin-top: 80px
 
 .page-header
   h1, h2, h3, h4, h5, h6
     font-family: 'Inconsolata'
 
-@media (max-width: 979px)
-  body
-    margin-top: 0px
-
-.navbar .navbar-inner
+.navbar.navbar-fixed-top 
   .nav li > a
     text-shadow: none
     &:hover
       color: $base3
-  .brand
+  .navbar-brand
     background: $yellow
     text-shadow: none
 
-.page-header
-  margin: 0 0 30px
+.container
   h1#title
-    font-size: 600%
+    margin: 0 0 40px
+    text-align: center
     color: $cyan
     padding: 10px 0
+    font:
+      size: 600%
+      family: 'Inconsolata'
 @media (max-width: 979px)
-  .page-header
-    h1#title
-      font-size: 340%
-      small
-        margin: 20px 0 0
-        line-height: 1.4em
+  h1#title
+    font-size: 340%
+    small
+      margin: 20px 0 0
+      line-height: 1.4em
 @media (max-width: 319px)
-  .page-header
-    h1#title
-      font-size: 240%
-      small
-        margin: 10px 0 0
-        line-height: 1.4em
+  h1#title
+    font-size: 240%
+    small
+      margin: 10px 0 0
+      line-height: 1.4em
 
 .alert-block
   p
@@ -78,10 +73,14 @@ p
   font:
     size: 120%
   color: $base01
+  margin: 
+    bottom: 1.4em
 
 ul
   margin-top: 20px
   margin-bottom: 20px
+  &.skills a
+    color: $green
   &.list
     li
       line-height: 3em
@@ -92,6 +91,8 @@ ul
           text-decoration: none
           color: darken(#d33682, 30%)
           cursor: pointer
+      &.comming-soon a
+        color: $base0
 
 #about, #projects, #contact
   margin: 0 0 30px

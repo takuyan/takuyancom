@@ -21,60 +21,53 @@
   </head>
   <body>
     <div class='navbar navbar-fixed-top'>
-      <div class='navbar-inner'>
-        <div class='container'>
-          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-          </a>
-          <a class='brand' href='/'>takuyan.com</a>
-          <div class='nav-collapse in'>
-            <ul class='nav'>
-              <li>
-                <a href='http://blog.takuyan.com' rel='me' target='_blank'>
-                  <i class='icon-rss'></i>
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href='http://twitter.com/#/katton' rel='me' target='_blank'>
-                  <i class='icon-twitter-sign'></i>
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href='https://github.com/takuyan' rel='me' target='_blank'>
-                  <i class='icon-github-sign'></i>
-                  Github
-                </a>
-              </li>
-              <li>
-                <a href='http://facebook.com/takuyank' rel='me' target='_blank'>
-                  <i class='icon-facebook-sign'></i>
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href='http://takuyan.hatenablog.com/' rel='me' target='_blank'>
-                  <i class='icon-rss-sign'></i>
-                  Old Blog
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class='container'>
+        <button class='navbar-toggle' data-target='.navbar-responsive-collapse' data-toggle='collapse'>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' href='/'>takuyan.com</a>
+        <div class='in nav-collapse collapse navbar-responsive-collapse'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='http://blog.takuyan.com' rel='me' target='_blank'>
+                <i class='icon-rss'></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href='http://twitter.com/#/katton' rel='me' target='_blank'>
+                <i class='icon-twitter-sign'></i>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/takuyan' rel='me' target='_blank'>
+                <i class='icon-github-sign'></i>
+                Github
+              </a>
+            </li>
+            <li>
+              <a href='http://facebook.com/takuyank' rel='me' target='_blank'>
+                <i class='icon-facebook-sign'></i>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href='http://takuyan.hatenablog.com/' rel='me' target='_blank'>
+                <i class='icon-rss-sign'></i>
+                Hatena Blog
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
     <div class='container'>
-      <div class='page-header'>
-        <h1 id='title'>
-          takuyan.com
-          <small>
-            Laziness, Impatience, Hubris.
-          </small>
-        </h1>
-      </div>
+      <h1 id='title'>
+        takuyan.com
+      </h1>
       <div id='about'>
         <div class='page-header'>
           <h2>
@@ -82,41 +75,66 @@
           </h2>
         </div>
         <div class='row'>
-          <div class='span10'>
+          <div class='col-lg-10'>
             <p>
-              しくみ作りが大好きで、怠けるための努力は惜しみません。
+              しくみ作りが大好きです。
+              <br>
+              じぶんの需要を満たすサービスを作りたくてプログラムを書き始めました。
+              <br>
+              いまでのその気持ちは変わりません。
             </p>
             <p>
-              ゼロからサービスを作るほうが得意です。そのためサーバ管理からデザイン、プログラムをひと通り嗜んでいます。立ち位置としては、UIデザインができるプログラマーといったところです。継続してメンテナンスするのは苦手なので自動テストを書いて能力を補ったりしています。
+              ゼロからサービスを作ることを得意としています。
+              <br>
+              そのためサーバ管理からデザイン、プログラムをひと通り嗜んでいます。
+              <br>
+              立ち位置としては、UIデザインができるプログラマーといったところです。
+              <br>
+              継続してメンテナンスするために自動テストを書いています。
             </p>
             <p>
-              「同じアイディアを持つひとが１００人、実際に作るひとが１０人、成功するひとが１人」という言葉が好きです。アイディアはそれだけではあまり価値は無く、作ってこそ価値があるものだと考えています。
+              "同じアイディアを持つひとが１００人、実際に作るひとが１０人、続けていけるひとが１人"という言葉が好きです。
+              <br>
+              アイディアはそれだけではあまり価値は無く、作ってこそ価値があるものだと考えています。
             </p>
+            <hr>
             <div class='row'>
-              <div class='span5'>
-                <h3>
-                  得意なこと
-                </h3>
-                <ul>
+              <div class='col-lg-6'>
+                <div class='page-header'>
+                  <h3>
+                    得意なこと
+                  </h3>
+                </div>
+                <ul class='skills'>
                   <li>
                     新規サービスの企画・プロトタイプ作成
                   </li>
                   <li>
-                    Ruby on Rails
+                    <a href='http://rubyonrails.org/' target='_blank'>
+                      Ruby on Rails
+                    </a>
                   </li>
                   <li>
-                    Twitter Bootstrap ベースのサイト構築
+                    <a href='http://getbootstrap.com' target='_blank'>
+                      Twitter Bootstrap
+                    </a>
+                    を利用したサイト構築
                   </li>
                   <li>
-                    Amazon Web Servicesを使ったLinuxサーバの構築
+                    <a href='http://aws.amazon.com/jp/' target='_blank'>
+                      Amazon Web Services
+                    </a>
+                    を使ったLinuxサーバの構築
                   </li>
                 </ul>
               </div>
-              <div class='span5'>
-                <h3>
-                  できること
-                </h3>
-                <ul>
+              <div class='col-lg-6'>
+                <div class='page-header'>
+                  <h3>
+                    できること
+                  </h3>
+                </div>
+                <ul class='skills'>
                   <li>
                     Titanium Mobile によるiPhone/Androidアプリ制作
                   </li>
@@ -133,9 +151,9 @@
               </div>
             </div>
           </div>
-          <div class='span2'>
+          <div class='col-lg-2'>
             <p>
-              <img alt='takuyan' class='img-polaroid' src='/assets/images/image.jpg'>
+              <img alt='takuyan' class='img-thumbnail' src='/assets/images/image.jpg'>
             </p>
             <p>
               Takuya Kato
@@ -145,10 +163,10 @@
       </div>
       <div id='projects'>
         <div class='row'>
-          <div class='span5'>
+          <div class='col-lg-5'>
             <div class='page-header'>
               <h2>
-                Personal Project
+                Project
               </h2>
             </div>
             <ul class='list'>
@@ -164,10 +182,7 @@
               </li>
               <li>
                 <a href='http://printer.takuyan.com' target='_blank'>
-                  文字並べ - Display Strings
-                  <span class='label'>
-                    Joke
-                  </span>
+                  Good Char View
                 </a>
               </li>
               <li>
@@ -175,9 +190,19 @@
                   Google Suggest API もどき
                 </a>
               </li>
+              <li class='comming-soon'>
+                <a href='http://guildrive.com' target='_blank'>
+                  Guildrive.com - Comming Soon
+                </a>
+              </li>
+              <li class='comming-soon'>
+                <a href='http://refor.me' target='_blank'>
+                  Refor.me - Comming Soon
+                </a>
+              </li>
             </ul>
           </div>
-          <div class='span5'>
+          <div class='col-lg-5'>
             <div class='page-header'>
               <h2>
                 Work
@@ -216,14 +241,14 @@
     </div>
     <div id='footer'>
       <div class='container'>
-        <ul class='inline'>
+        <ul class='list-inline'>
           <li>
             &copy; 2013 Takuya Kato All Right Reserved.
           </li>
         </ul>
       </div>
     </div>
-    <script src='/assets/javascripts/lib/bootstrap-collapse.js'></script>
+    <script src='/assets/javascripts/lib/bootstrap/collapse.js'></script>
     <script src='/assets/javascripts/main.js'></script>
     <script>
       var _gaq = _gaq || [];

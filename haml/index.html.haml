@@ -19,72 +19,88 @@
     %link{href: "/favicon.ico", rel: "shortcut icon", type: "image/x-icon"}
   %body
     .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.brand{href: "/"} takuyan.com
-          .nav-collapse.in
-            %ul.nav
-              %li
-                %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
-                  %i.icon-rss
-                  Blog
-              %li
-                %a{href: "http://twitter.com/#/katton", rel: "me", target: :_blank}
-                  %i.icon-twitter-sign
-                  Twitter
-              %li
-                %a{href: "https://github.com/takuyan", rel: "me", target: :_blank}
-                  %i.icon-github-sign
-                  Github
-              %li
-                %a{href: "http://facebook.com/takuyank", rel: "me", target: :_blank}
-                  %i.icon-facebook-sign
-                  Facebook
-              %li
-                %a{href: "http://takuyan.hatenablog.com/", rel: "me", target: :_blank}
-                  %i.icon-rss-sign
-                  Old Blog
+      .container
+        %button.navbar-toggle{data: {toggle: "collapse", target: ".navbar-responsive-collapse"}}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{href: "/"} takuyan.com
+        .in.nav-collapse.collapse.navbar-responsive-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
+                %i.icon-rss
+                Blog
+            %li
+              %a{href: "http://twitter.com/#/katton", rel: "me", target: :_blank}
+                %i.icon-twitter-sign
+                Twitter
+            %li
+              %a{href: "https://github.com/takuyan", rel: "me", target: :_blank}
+                %i.icon-github-sign
+                Github
+            %li
+              %a{href: "http://facebook.com/takuyank", rel: "me", target: :_blank}
+                %i.icon-facebook-sign
+                Facebook
+            %li
+              %a{href: "http://takuyan.hatenablog.com/", rel: "me", target: :_blank}
+                %i.icon-rss-sign
+                Hatena Blog
     .container
-      .page-header
-        %h1#title
-          takuyan.com
-          %small
-            Laziness, Impatience, Hubris.
+      %h1#title
+        takuyan.com
 
       #about
         .page-header
           %h2
             About Me
         .row
-          .span10
+          .col-lg-10
             %p
-              しくみ作りが大好きで、怠けるための努力は惜しみません。
+              しくみ作りが大好きです。
+              %br
+              じぶんの需要を満たすサービスを作りたくてプログラムを書き始めました。
+              %br
+              いまでのその気持ちは変わりません。
             %p
-              ゼロからサービスを作るほうが得意です。そのためサーバ管理からデザイン、プログラムをひと通り嗜んでいます。立ち位置としては、UIデザインができるプログラマーといったところです。継続してメンテナンスするのは苦手なので自動テストを書いて能力を補ったりしています。
+              ゼロからサービスを作ることを得意としています。
+              %br
+              そのためサーバ管理からデザイン、プログラムをひと通り嗜んでいます。
+              %br
+              立ち位置としては、UIデザインができるプログラマーといったところです。
+              %br
+              継続してメンテナンスするために自動テストを書いています。
             %p
-              「同じアイディアを持つひとが１００人、実際に作るひとが１０人、成功するひとが１人」という言葉が好きです。アイディアはそれだけではあまり価値は無く、作ってこそ価値があるものだと考えています。
+              "同じアイディアを持つひとが１００人、実際に作るひとが１０人、続けていけるひとが１人"という言葉が好きです。
+              %br
+              アイディアはそれだけではあまり価値は無く、作ってこそ価値があるものだと考えています。
+            %hr
 
             .row
-              .span5
-                %h3
-                  得意なこと
-                %ul
+              .col-lg-6
+                .page-header
+                  %h3
+                    得意なこと
+                %ul.skills
                   %li
                     新規サービスの企画・プロトタイプ作成
                   %li
-                    Ruby on Rails
+                    %a{href: 'http://rubyonrails.org/', target: :_blank}
+                      Ruby on Rails
                   %li
-                    Twitter Bootstrap ベースのサイト構築
+                    %a{href: 'http://getbootstrap.com', target: :_blank}
+                      Twitter Bootstrap 
+                    を利用したサイト構築
                   %li
-                    Amazon Web Servicesを使ったLinuxサーバの構築
-              .span5
-                %h3
-                  できること
-                %ul
+                    %a{href: 'http://aws.amazon.com/jp/', target: :_blank}
+                      Amazon Web Services
+                    を使ったLinuxサーバの構築
+              .col-lg-6
+                .page-header
+                  %h3
+                    できること
+                %ul.skills
                   %li
                     Titanium Mobile によるiPhone/Androidアプリ制作
                   %li
@@ -94,18 +110,18 @@
                   %li
                     育児
 
-          .span2
+          .col-lg-2
             %p
-              %img{src: '/assets/images/image.jpg', alt: 'takuyan', class: 'img-polaroid'}
+              %img{src: '/assets/images/image.jpg', alt: 'takuyan', class: 'img-thumbnail'}
             %p
               Takuya Kato
 
       #projects
         .row
-          .span5
+          .col-lg-5
             .page-header
               %h2
-                Personal Project
+                Project
             %ul.list
               %li
                 %a{href: "http://proofoflife.me", target: :_blank}
@@ -115,13 +131,17 @@
                   ゲームブック - Gamebook
               %li
                 %a{href: "http://printer.takuyan.com", target: :_blank}
-                  文字並べ - Display Strings
-                  %span.label
-                    Joke
+                  Good Char View 
               %li
                 %a{href: "http://gsuggest.herokuapp.com/", target: :_blank}
                   Google Suggest API もどき
-          .span5
+              %li.comming-soon
+                %a{href: "http://guildrive.com", target: :_blank}
+                  Guildrive.com - Comming Soon
+              %li.comming-soon
+                %a{href: "http://refor.me", target: :_blank}
+                  Refor.me - Comming Soon
+          .col-lg-5
             .page-header
               %h2
                 Work
@@ -144,23 +164,23 @@
 
     #footer
       .container
-        %ul.inline
+        %ul.list-inline
           %li
             &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
 
-    -#%script{src: "/assets/javascripts/lib/bootstrap-affix.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-alert.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-button.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-carousel.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-collapse.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-dropdown.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-modal.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-scrollspy.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-tab.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-tooltip.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-transition.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-typeahead.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-popover.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/affix.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/alert.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/button.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/carousel.js"}
+    %script{src: "/assets/javascripts/lib/bootstrap/collapse.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/dropdown.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/modal.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/scrollspy.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/tab.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/tooltip.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/transition.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/typeahead.js"}
+    -#%script{src: "/assets/javascripts/lib/bootstrap/popover.js"}
     %script{src: "/assets/javascripts/main.js"}
     :javascript
       var _gaq = _gaq || [];
