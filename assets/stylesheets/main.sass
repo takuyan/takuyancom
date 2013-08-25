@@ -1,34 +1,24 @@
-@import 'colors'
+@import colors
 
-$navbarBackground: $base0
-$navbarBackgroundHighlight: lighten($navbarBackground, 10%)
-$navbarBrandColor: $base3
+$navbar-default-bg: $base0
+$navbar-default-brand-color: $base3
 $navbarText: $base01
-$navbarLinkColor: $base01
-$bodyBackground: $base3
+$navbar-default-link-color: $base01
+$body-bg: $base3
 
-$iconSpritePath: "../images/glyphicons-halflings.png"
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png"
+$brand-info: $blue
+$font-family-sans-serif: 'Maru Folk Regular', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
 
-$infoBackground: $blue
-$infoText: $base1
-$baseFontFamily: 'Maru Folk Regular', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
-
-@import 'lib/bootstrap'
-@import 'lib/responsive'
+@import bootstrap/bootstrap
 
 body
-  margin-top: 60px
+  margin-top: 70px
 
 .page-header
   h1, h2, h3, h4, h5, h6
     font-family: 'Inconsolata'
 
-@media (max-width: 979px)
-  body
-    margin-top: 0px
-
-.navbar .navbar-inner
+.navbar
   .nav li > a
     text-shadow: none
     &:hover

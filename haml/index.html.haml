@@ -1,5 +1,5 @@
 !!!
-%html
+%html{lang: :ja}
   %head
     %meta{charset: "utf-8"}
     %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-type"}
@@ -18,36 +18,38 @@
     %link{href: "/assets/stylesheets/syntax.css", rel: "stylesheet"}
     %link{href: "/favicon.ico", rel: "shortcut icon", type: "image/x-icon"}
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+    %nav.navbar.navbar-default.navbar-fixed-top{role: :banner}
+      .container
+        .navbar-header
+          %button.navbar-toggle{type: :button, data: {toggle: "collapse", target: ".bs-navbar-collapse"}}
+            %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{href: "/"} takuyan.com
-          .nav-collapse.in
-            %ul.nav
-              %li
-                %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
-                  %i.icon-rss
-                  Blog
-              %li
-                %a{href: "http://twitter.com/#/katton", rel: "me", target: :_blank}
-                  %i.icon-twitter-sign
-                  Twitter
-              %li
-                %a{href: "https://github.com/takuyan", rel: "me", target: :_blank}
-                  %i.icon-github-sign
-                  Github
-              %li
-                %a{href: "http://facebook.com/takuyank", rel: "me", target: :_blank}
-                  %i.icon-facebook-sign
-                  Facebook
-              %li
-                %a{href: "http://takuyan.hatenablog.com/", rel: "me", target: :_blank}
-                  %i.icon-rss-sign
-                  Old Blog
+          %a.navbar-brand{href: "/"} takuyan.com
+
+        .collapse.nav-collapse.bs-navbar-collapse{role: :navigation}
+          %ul.nav.navbar-nav
+            %li
+              %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
+                %i.icon-rss
+                Blog
+            %li
+              %a{href: "http://twitter.com/#/katton", rel: "me", target: :_blank}
+                %i.icon-twitter-sign
+                Twitter
+            %li
+              %a{href: "https://github.com/takuyan", rel: "me", target: :_blank}
+                %i.icon-github-sign
+                Github
+            %li
+              %a{href: "http://facebook.com/takuyank", rel: "me", target: :_blank}
+                %i.icon-facebook-sign
+                Facebook
+            %li
+              %a{href: "http://takuyan.hatenablog.com/", rel: "me", target: :_blank}
+                %i.icon-rss-sign
+                Old Blog
     .container
       .page-header
         %h1#title
@@ -60,7 +62,7 @@
           %h2
             About Me
         .row
-          .span10
+          .col-lg-10
             %p
               しくみ作りが大好きで、怠けるための努力は惜しみません。
             %p
@@ -69,7 +71,7 @@
               「同じアイディアを持つひとが１００人、実際に作るひとが１０人、成功するひとが１人」という言葉が好きです。アイディアはそれだけではあまり価値は無く、作ってこそ価値があるものだと考えています。
 
             .row
-              .span5
+              .col-lg-5
                 %h3
                   得意なこと
                 %ul
@@ -81,7 +83,7 @@
                     Twitter Bootstrap ベースのサイト構築
                   %li
                     Amazon Web Servicesを使ったLinuxサーバの構築
-              .span5
+              .col-lg-5
                 %h3
                   できること
                 %ul
@@ -94,15 +96,15 @@
                   %li
                     育児
 
-          .span2
+          .col-lg-2
             %p
-              %img{src: '/assets/images/image.jpg', alt: 'takuyan', class: 'img-polaroid'}
+              %img{src: '/assets/images/image.jpg', alt: 'takuyan', class: 'img-thumbnail'}
             %p
               Takuya Kato
 
       #projects
         .row
-          .span5
+          .col-lg-5
             .page-header
               %h2
                 Personal Project
@@ -121,7 +123,7 @@
               %li
                 %a{href: "http://gsuggest.herokuapp.com/", target: :_blank}
                   Google Suggest API もどき
-          .span5
+          .col-lg-5
             .page-header
               %h2
                 Work
@@ -144,23 +146,22 @@
 
     #footer
       .container
-        %ul.inline
+        %ul.list-inline
           %li
             &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
 
-    -#%script{src: "/assets/javascripts/lib/bootstrap-affix.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-alert.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-button.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-carousel.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap-collapse.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-dropdown.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-modal.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-scrollspy.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-tab.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-tooltip.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-transition.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-typeahead.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap-popover.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/affix.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/alert.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/button.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/carousel.js"}
+    %script{src: "/assets/javascripts/bootstrap/collapse.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/dropdown.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/modal.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/scrollspy.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/tab.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/tooltip.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/transition.js"}
+    -#%script{src: "/assets/javascripts/bootstrap/popover.js"}
     %script{src: "/assets/javascripts/main.js"}
     :javascript
       var _gaq = _gaq || [];
