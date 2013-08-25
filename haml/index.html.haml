@@ -1,5 +1,5 @@
 !!!
-%html
+%html{lang: :ja}
   %head
     %meta{charset: "utf-8"}
     %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-type"}
@@ -18,14 +18,17 @@
     %link{href: "/assets/stylesheets/syntax.css", rel: "stylesheet"}
     %link{href: "/favicon.ico", rel: "shortcut icon", type: "image/x-icon"}
   %body
-    .navbar.navbar-fixed-top
+    %nav.navbar.navbar-default.navbar-fixed-top{role: :banner}
       .container
-        %button.navbar-toggle{data: {toggle: "collapse", target: ".navbar-responsive-collapse"}}
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        %a.navbar-brand{href: "/"} takuyan.com
-        .in.nav-collapse.collapse.navbar-responsive-collapse
+        .navbar-header
+          %button.navbar-toggle{type: :button, data: {toggle: "collapse", target: ".bs-navbar-collapse"}}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "/"} takuyan.com
+
+        .collapse.nav-collapse.bs-navbar-collapse{role: :navigation}
           %ul.nav.navbar-nav
             %li
               %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
@@ -58,7 +61,7 @@
           .col-lg-12
             .page-header
               %h2
-                About Me
+                About.me
         .row
           .col-lg-10
             %p
@@ -97,6 +100,10 @@
                       Twitter Bootstrap 
                     を利用したサイト構築
                   %li
+                    %a{href: 'http://backbonejs.org', target: :_blank}
+                      Backbone.js
+                    によるクライアントアプリの開発
+                  %li
                     %a{href: 'http://aws.amazon.com/jp/', target: :_blank}
                       Amazon Web Services
                     を使ったLinuxサーバの構築
@@ -109,6 +116,8 @@
                     Titanium Mobile によるiPhone/Androidアプリ制作
                   %li
                     Haml, Sass, CoffeeScript, Rspec, Jenkins
+                  %li
+                    ホームページの制作
                   %li
                     コイン・マジック
                   %li
@@ -174,19 +183,7 @@
           %li
             &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
 
-    -#%script{src: "/assets/javascripts/lib/bootstrap/affix.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/alert.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/button.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/carousel.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap/collapse.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/dropdown.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/modal.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/scrollspy.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/tab.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/tooltip.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/transition.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/typeahead.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/popover.js"}
+    %script{src: "/assets/javascripts/bootstrap/collapse.js"}
     %script{src: "/assets/javascripts/main.js"}
     :javascript
       var _gaq = _gaq || [];

@@ -1,5 +1,5 @@
 !!!
-%html
+%html{lang: :ja}
   %head
     %meta{charset: "utf-8"}
     %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-type"}
@@ -18,36 +18,38 @@
     %link{href: "/assets/stylesheets/syntax.css", rel: "stylesheet"}
     %link{href: "/favicon.ico", rel: "shortcut icon", type: "image/x-icon"}
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+    %nav.navbar.navbar-default.navbar-fixed-top{role: :banner}
+      .container
+        .navbar-header
+          %button.navbar-toggle{type: :button, data: {toggle: "collapse", target: ".bs-navbar-collapse"}}
+            %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{href: "/"} takuyan.com
-          .nav-collapse.in
-            %ul.nav
-              %li
-                %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
-                  %i.icon-rss
-                  Blog
-              %li
-                %a{href: "http://twitter.com/#/katton", rel: "me", target: :_blank}
-                  %i.icon-twitter-sign
-                  Twitter
-              %li
-                %a{href: "https://github.com/takuyan", rel: "me", target: :_blank}
-                  %i.icon-github-sign
-                  Github
-              %li
-                %a{href: "http://facebook.com/takuyank", rel: "me", target: :_blank}
-                  %i.icon-facebook-sign
-                  Facebook
-              %li
-                %a{href: "http://takuyan.hatenablog.com/", rel: "me", target: :_blank}
-                  %i.icon-rss-sign
-                  Old Blog
+          %a.navbar-brand{href: "/"} takuyan.com
+
+        .collapse.nav-collapse.bs-navbar-collapse{role: :navigation}
+          %ul.nav.navbar-nav
+            %li
+              %a{href: "http://blog.takuyan.com", rel: 'me', target: :_blank}
+                %i.icon-rss
+                Blog
+            %li
+              %a{href: "http://twitter.com/#/katton", rel: "me", target: :_blank}
+                %i.icon-twitter-sign
+                Twitter
+            %li
+              %a{href: "https://github.com/takuyan", rel: "me", target: :_blank}
+                %i.icon-github-sign
+                Github
+            %li
+              %a{href: "http://facebook.com/takuyank", rel: "me", target: :_blank}
+                %i.icon-facebook-sign
+                Facebook
+            %li
+              %a{href: "http://takuyan.hatenablog.com/", rel: "me", target: :_blank}
+                %i.icon-rss-sign
+                Hatena Blog
     .container
       %h1.not_found#nf1
         404
@@ -69,9 +71,11 @@
           Back to Top
     #footer
       .container
-        %ul.inline
+        %ul.list-inline
           %li
             &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
+    %script{src: "/assets/javascripts/bootstrap/collapse.js"}
+    %script{src: "/assets/javascripts/main.js"}
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-30952501-1']);
