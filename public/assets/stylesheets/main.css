@@ -391,12 +391,20 @@ h2,
 h3 {
   margin-top: 20px;
   margin-bottom: 10px; }
+  h1 small,
+  h2 small,
+  h3 small {
+    font-size: 65%; }
 
 h4,
 h5,
 h6 {
   margin-top: 10px;
   margin-bottom: 10px; }
+  h4 small,
+  h5 small,
+  h6 small {
+    font-size: 75%; }
 
 h1, .h1 {
   font-size: 36px; }
@@ -415,16 +423,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 12px; }
-
-h1 small, .h1 small {
-  font-size: 24px; }
-
-h2 small, .h2 small {
-  font-size: 18px; }
-
-h3 small, .h3 small,
-h4 small, .h4 small {
-  font-size: 14px; }
 
 .page-header {
   padding-bottom: 9px;
@@ -1310,7 +1308,9 @@ table th[class*="col-"] {
     margin-bottom: 15px;
     overflow-y: hidden;
     overflow-x: scroll;
-    border: 1px solid #dddddd; }
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+    -webkit-overflow-scrolling: touch; }
     .table-responsive > .table {
       margin-bottom: 0;
       background-color: #fff; }
@@ -1398,6 +1398,14 @@ input[type="checkbox"]:focus {
 
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
   height: auto; }
+
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  vertical-align: middle; }
 
 .form-control:-moz-placeholder {
   color: #999999; }
@@ -1873,6 +1881,8 @@ input[type="button"].btn-block {
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
+  .glyphicon:empty {
+    width: 1em; }
 
 .glyphicon-asterisk:before {
   content: "\2a"; }
@@ -3359,6 +3369,8 @@ input[type="button"].btn-block {
     border-color: #428bca;
     cursor: default; }
   .pagination > .disabled > span,
+  .pagination > .disabled > span:hover,
+  .pagination > .disabled > span:focus,
   .pagination > .disabled > a,
   .pagination > .disabled > a:hover,
   .pagination > .disabled > a:focus {
