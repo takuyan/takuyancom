@@ -1,19 +1,16 @@
-@import 'colors'
+@import colors
 
-$navbar-bg: $base0
-$navbar-brand-color: $base3
-$navbar-link-color: $base01
 $body-bg: $base3
-
-$iconSpritePath: "../images/glyphicons-halflings.png"
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png"
-
-$infoBackground: $blue
-$infoText: $base1
+$navbar-default-bg: $base0
+$navbar-default-brand-color: $body-bg
+$navbar-default-link-color: $base01
+$brand-primary: $cyan
+$brand-success: $green
+$brand-info: $blue
 
 $font-family-sans-serif: 'Inconsolata', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
 
-@import 'bootstrap'
+@import bootstrap
 
 body
   margin-top: 80px
@@ -23,7 +20,7 @@ body
     font-family: 'Inconsolata'
 
 .navbar.navbar-fixed-top 
-  .nav li > a
+  //.nav li > a
     text-shadow: none
     &:hover
       color: $base3

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='ja'>
   <head>
     <meta charset='utf-8'>
     <meta content='text/html; charset=utf-8' http-equiv='Content-type'>
@@ -18,17 +18,22 @@
     <link href='/assets/stylesheets/main.css' rel='stylesheet'>
     <link href='/assets/stylesheets/syntax.css' rel='stylesheet'>
     <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div class='navbar navbar-fixed-top'>
+    <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
       <div class='container'>
-        <button class='navbar-toggle' data-target='.navbar-responsive-collapse' data-toggle='collapse'>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-        </button>
-        <a class='navbar-brand' href='/'>takuyan.com</a>
-        <div class='in nav-collapse collapse navbar-responsive-collapse'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='.bs-navbar-collapse' data-toggle='collapse' type='button'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='/'>takuyan.com</a>
+        </div>
+        <div class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
           <ul class='nav navbar-nav'>
             <li>
               <a href='http://blog.takuyan.com' rel='me' target='_blank'>
@@ -63,10 +68,10 @@
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
     <div class='container'>
       <div class='row'>
-        <div class='col-lg-12'>
+        <div class='col-md-12'>
           <h1 id='title'>
             takuyan.com
           </h1>
@@ -74,7 +79,7 @@
       </div>
       <div id='about'>
         <div class='row'>
-          <div class='col-lg-12'>
+          <div class='col-md-12'>
             <div class='page-header'>
               <h2>
                 About Me
@@ -83,7 +88,7 @@
           </div>
         </div>
         <div class='row'>
-          <div class='col-lg-10'>
+          <div class='col-md-10'>
             <p>
               新しいことと、仕組み作りが大好きです。
               <br>
@@ -103,7 +108,7 @@
             </p>
             <hr>
             <div class='row'>
-              <div class='col-lg-6'>
+              <div class='col-md-6'>
                 <div class='page-header'>
                   <h3>
                     得意なこと
@@ -132,7 +137,7 @@
                   </li>
                 </ul>
               </div>
-              <div class='col-lg-6'>
+              <div class='col-md-6'>
                 <div class='page-header'>
                   <h3>
                     できること
@@ -155,7 +160,7 @@
               </div>
             </div>
           </div>
-          <div class='col-lg-2'>
+          <div class='col-md-2'>
             <p>
               <img alt='takuyan' class='img-thumbnail' src='/assets/images/image.jpg'>
             </p>
@@ -167,7 +172,7 @@
       </div>
       <div id='projects'>
         <div class='row'>
-          <div class='col-lg-5'>
+          <div class='col-md-5'>
             <div class='page-header'>
               <h2>
                 Project
@@ -206,7 +211,7 @@
               </li>
             </ul>
           </div>
-          <div class='col-lg-5'>
+          <div class='col-md-5'>
             <div class='page-header'>
               <h2>
                 Work
@@ -234,7 +239,7 @@
       </div>
       <div id='contact'></div>
       <div class='row'>
-        <div class='col-lg-12'>
+        <div class='col-md-12'>
           <div class='page-header'>
             <h2>
               Contact
