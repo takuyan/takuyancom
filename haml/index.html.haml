@@ -61,7 +61,7 @@
           .col-md-12
             .page-header
               %h2
-                About Me
+                About.me
         .row
           .col-md-10
             %p
@@ -96,6 +96,10 @@
                       Twitter Bootstrap 
                     を利用したWebサイト構築
                   %li
+                    %a{href: 'http://backbonejs.org', target: :_blank}
+                      Backbone.js
+                    によるクライアントアプリの開発
+                  %li
                     %a{href: 'http://aws.amazon.com/jp/', target: :_blank}
                       Amazon Web Services
                     を使ったLinuxサーバの構築
@@ -108,6 +112,8 @@
                     Titanium Mobile によるiPhone/Androidアプリ制作
                   %li
                     Haml, Sass, CoffeeScript, Rspec, Jenkins
+                  %li
+                    ホームページの制作
                   %li
                     コイン・マジック
                   %li
@@ -158,6 +164,9 @@
               %li
                 %a{href: "http://shichikasha.info", target: :_blank}
                   七花舎文庫 - Shichikasha Bunko
+              %li.comming-soon
+                %a{href: "http://sxrum.com", target: :_blank}
+                  Scrum - Comming Soon
       #contact
       .row
         .col-md-12
@@ -173,19 +182,7 @@
           %li
             &copy; #{Date.today.strftime("%Y")} Takuya Kato All Right Reserved.
 
-    -#%script{src: "/assets/javascripts/lib/bootstrap/affix.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/alert.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/button.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/carousel.js"}
-    %script{src: "/assets/javascripts/lib/bootstrap/collapse.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/dropdown.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/modal.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/scrollspy.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/tab.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/tooltip.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/transition.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/typeahead.js"}
-    -#%script{src: "/assets/javascripts/lib/bootstrap/popover.js"}
+    %script{src: "/assets/javascripts/bootstrap/collapse.js"}
     %script{src: "/assets/javascripts/main.js"}
     :javascript
       var _gaq = _gaq || [];
